@@ -1,0 +1,167 @@
+*{
+	/*outline: 1px dotted red;*/
+}
+div.container{
+	width: 863px;
+	min-height: 10px;
+}
+	div.header{
+		width: 863px;
+		min-height: 10px;
+		background-color: rgb(110, 1, 1);
+	}
+		#main_header{
+			vertical-align: top;
+			min-width: 100px;
+			min-height: 10px;
+			display: inline-block;
+			background-color: rgb(110, 1, 1);
+		}
+		#right_header{
+			margin-left: 50px;
+			min-width: 250px;
+			min-height: 10px;
+			display: inline-block;
+			background-color: rgb(200, 0 20);
+		}
+			#right_header ul{
+				margin: 5px;
+				font-size: 0.70em;
+				color: white;
+				font-family: sans-serif;
+			}
+				#right_header ul li{
+					display: inline;
+				}
+					#right_header ul li a{
+						color: rgb(230, 180, 70);
+					}
+
+			#right_header form{
+				margin-left: 98px;
+				display: inline-block;
+				font-size: 1em;
+			}
+				#right_header input[type=text]{
+					width: 115px;
+				}
+				#right_header input[type=submit]{
+					color: white;
+					background: none;
+					font-size: 0.5em;
+					border: 1px solid white;
+					margin-bottom: 1px;
+					vertical-align: top;
+					margin-top: 1px;
+
+				}
+
+	nav{
+		min-height: 10px;
+		background-color: rgb(220, 220, 220);
+	}
+		nav ul{
+			margin: 0px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+		}
+		nav ul li{
+			margin: 1px;
+			display: inline;
+			font-family: sans-serif;
+		}
+			nav ul li a{
+			text-decoration: none;
+			border-left: 1px solid rgb(100, 100, 100);
+			padding-left: 8px;
+			padding-right: 5px;
+			color: rgb(100, 100, 100);
+			font-weight: bold;
+			font-size: 0.8em;
+			}
+			nav ul li a#home_anchor{
+				border-left: none;
+			}
+	div.content{
+		min-height: 100px;
+
+	}
+		div.content ul#sidebar{
+			display: inline-block;
+			vertical-align: top;
+			margin: 20px 0px 20px 20px;
+			padding: 15px 15px 15px 30px;
+			width: 150px;
+			background-color: rgb(237, 237, 237);
+			outline: 1px solid rgb(225, 225, 225);
+			list-style-type: none;
+			color: rgb(130, 1, 1);
+
+		}
+			div.content ul#sidebar li{
+
+				display: inline-block;
+		 		color: rgb(130, 1, 1);
+		 		text-indent: -12px;
+		 		margin-left: 12px;
+	     		}
+	     	div.content ul#sidebar li:before{
+	     		content:"\00BB \0020";
+				display: inline-block;
+		 		color: rgb(130, 1, 1);
+	     		}
+			div.content ul#sidebar li a{
+				color: rgb(130, 1, 1);
+				font-size: 0.8em;
+				font-family: sans-serif;
+				padding-right: 20px;
+			}
+		#main_content{
+			display: inline-block;
+			vertical-align: top;
+			width: 525px;
+			font-family: sans-serif;
+			margin-left: 20px;
+		}
+		#main_content h3, #main_content h5{
+			color: rgb(130, 1, 1);
+		}
+			#main_content p{
+				font-size: 0.8em;
+			}
+			#main_content ul li{
+				font-size: 0.8em;
+				color: black;
+				}
+				#main_content ul li a{
+					color: rgb(130, 1, 1);
+				
+				}
+			#main_content p a{
+			color: rgb(130, 1, 1);
+			}
+			#main_content ul{
+				margin-bottom: 5px;
+			}
+
+			#main_content ul li p{
+				font-size: 1em;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+					#main_content ul li p span{
+						font-size: 1em;
+						font-weight: bold;
+					}
+			#main_content ol li{
+				font-size: 0.8em;
+				color: black;
+				padding-bottom: 3px;
+				}
+				#main_content ol li a{
+					color: rgb(130, 1, 1);				
+				}
+
+
+

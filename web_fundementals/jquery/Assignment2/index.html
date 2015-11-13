@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Disappearing Images</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('img').click(function(){
+    			$(this).hide()
+    		});
+    		$('button').click(function(){
+    			$('img').show();
+    		});
+		});
+	</script>
+</head>
+<body>
+	<div class= "container">
+		<h2>Click to Disappear</h2>
+		<div class = "images">
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+			<div>
+				<img src = "http://twigglemagazine.com/April-activities/images/a_squarelesson_large.jpg" alt = "face">
+			</div>
+		</div>
+		<button>Restore</button>
+	</div>
+</body>
+</html>

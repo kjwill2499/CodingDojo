@@ -1,0 +1,71 @@
+
+/*Some text styling could be done, specifically removing underlines from navigation links and increasing the weat of the ul in the content*/
+*
+#wrapper{
+ 	width: 970px;
+ 	min-height: 100px;
+ 	background: rgb(245,245,245);
+ 	padding: 10px 40px 20px 10px;
+}
+	div.header, div.body, div.footer{
+ 		min-height: 50px;
+	}
+	div.header{
+		background: rgb(220,220,220);
+		border-radius: 25px;
+	}
+		div.header h1 {
+			padding: 20px;
+		}
+	div.body{
+		margin: 30px 0px 30px 0px;
+		overflow: hidden;
+
+	}
+		#navigation{
+			min-height: 250px;
+			width: 280px;
+			display: inline-block;
+ 			background: rgb(220,220,220);
+ 			vertical-align: top;
+ 			border-radius: 25px;
+ 			margin-right: 30px;
+ 			padding-top: 15px;
+		}
+			#navigation > a{
+				padding-left: 20px;
+				margin: 0px;
+				margin-bottom: 0px;
+			}
+			#navigation > ul{
+				margin-top: 5px;
+
+			}
+			#navigation a{
+				text-decoration: none;
+			}
+		#content{
+ 			min-height: 350px;
+ 			width: 660px;
+ 			display: inline-block;;
+ 			background: rgb(180,180,180);
+ 			vertical-align: top;
+ 			border-radius: 25px;
+ 			float: right;
+		}
+			#content h2{
+				padding-left: 15px;
+				padding-top: 20px;
+				margin: 20px 0px;
+			}
+			#content p{
+				margin: 20px;
+			}
+			#content li{
+				margin: 20px 0px;
+			}
+	div.footer{
+		background: rgb(220,220,220);
+		border-radius: 25px;
+		padding: 10px 0px 10px 20px;
+		}

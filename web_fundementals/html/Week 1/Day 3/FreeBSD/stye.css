@@ -1,0 +1,7 @@
+*{
+	outline: 2px dashed red;
+}
+div.container{
+	width: 900px;
+	min-height: 100px;
+}

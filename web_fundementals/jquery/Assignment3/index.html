@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Transition</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    		$('img').click(function(){
+    			var temp = $(this).attr('src');
+    			$(this).attr('src' , $(this).attr('data-alt-src'));
+    			$(this).attr('data-alt-src', temp);
+    		});
+    		$('button').click(function(){
+    			$('img').each(function(){
+    				$(this).attr('src', $(this).attr('data-original-src'));
+    			});
+    			$('img').each(function(){
+    				$(this).attr('data-alt-src', $(this).attr('data-original-alt-src'));
+    			});
+    		});
+		});
+	</script>
+</head>
+<body>
+	<div class = "container">
+		<h2>Have Fun Clicking!</h2>
+		<div>
+			<img src="images/PinkieSplit/p1.png" data-alt-src="images/RainbowSplit/r1.png" data-original-src="images/PinkieSplit/p1.png" data-original-alt-src="images/RainbowSplit/r1.png" alt="top left">
+			<img src="images/PinkieSplit/p2.png" data-alt-src="images/RainbowSplit/r2.png" data-original-src="images/PinkieSplit/p2.png" data-original-alt-src="images/RainbowSplit/r2.png" alt="top mid">
+			<img src="images/PinkieSplit/p3.png" data-alt-src="images/RainbowSplit/r3.png" data-original-src="images/PinkieSplit/p3.png" data-original-alt-src="images/RainbowSplit/r3.png" alt="top right">
+		</div>
+		<div>
+			<img src="images/PinkieSplit/p4.png" data-alt-src="images/RainbowSplit/r4.png" data-original-src="images/PinkieSplit/p4.png" data-original-alt-src="images/RainbowSplit/r4.png" alt="mid left">
+			<img src="images/PinkieSplit/p5.png" data-alt-src="images/RainbowSplit/r5.png" data-original-src="images/PinkieSplit/p5.png" data-original-alt-src="images/RainbowSplit/r5.png" alt="mid mid">
+			<img src="images/PinkieSplit/p6.png" data-alt-src="images/RainbowSplit/r6.png" data-original-src="images/PinkieSplit/p6.png" data-original-alt-src="images/RainbowSplit/r6.png" alt="mid right">
+		</div>
+		<div>
+			<img src="images/PinkieSplit/p7.png" data-alt-src="images/RainbowSplit/r7.png" data-original-src="images/PinkieSplit/p7.png" data-original-alt-src="images/RainbowSplit/r7.png" alt="bot left">
+			<img src="images/PinkieSplit/p8.png" data-alt-src="images/RainbowSplit/r8.png" data-original-src="images/PinkieSplit/p8.png" data-original-alt-src="images/RainbowSplit/r8.png" alt="bot mid">
+			<img src="images/PinkieSplit/p9.png" data-alt-src="images/RainbowSplit/r9.png" data-original-src="images/PinkieSplit/p9.png" data-original-alt-src="images/RainbowSplit/r9.png" alt="bot right">
+		</div>
+		<button>Reset</button>
+	</div>
+	
+</body>
+</html>

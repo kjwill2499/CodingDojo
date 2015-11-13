@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>addUser Assignment</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+    	$('form').submit(function(){
+    		$('tbody').append("<tr></tr>");
+    		$('tr:last').html(function(){
+  				var first_name = "<td>" + $('input:text[name = first_name]').val() + "</td>";
+  				var last_name = "<td>" + $('input:text[name = last_name]').val() + "</td>";
+  				var email_address = "<td>" + $('input:text[name = email_address]').val() + "</td>";
+  				var contact= "<td>" + $('input:text[name = contact]').val() + "</td>";
+  				return first_name + last_name + email_address + contact;
+			});
+			return false;
+    	});
+	});
+	</script>
+</head>
+<body>
+	<table>
+    	<thead>
+       		<tr>
+            	<th>First Name</th>
+            	<th>Last Name</th>
+            	<th>Email Address</th>
+            	<th>Contact #</th>
+    	    </tr>
+    	</thead>
+    	<tbody>
+    	</tbody>
+	</table>
+	<form>Add User
+		<label>First Name:<input type = 'text' name = 'first_name'></label>
+		<label>Last Name:<input type = 'text' name = 'last_name'></label>
+		<label>Email Address:<input type = 'text' name = 'email_address'></label>
+		<label>Contact #:<input type = 'text' name = 'contact'></label>
+		<input type = 'submit' value = 'Submit'>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+	.container{
+		margin: 0;
+		padding: 0;
+	}
+		h2{
+			margin: 2%;
+		}
+		div.images{
+			margin: 1%;
+		}
+			.images div{
+				display: inline-block;
+				width: 20%;
+				margin: 1%;
+		}
+				img{
+					width: 100%;
+				}
+		button{
+			margin: 2% 10% 10% 10%;
+			width: 70%;
+		}

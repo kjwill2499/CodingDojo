@@ -1,0 +1,9 @@
+first_name,last_name,friend_first_name,friend_last_name
+Pete,Maravich,"Doug	",Flutie
+"Doug	",Flutie,Pete,Maravich
+"Doug	",Flutie,Brett,Favre
+Brett,Favre,NULL,NULL
+Steve,Smith,"Doug	",Flutie
+"Steve ",Young,NULL,NULL
+"Karl	",Marx,"Karl	",Marx
+Wesley,Snipes,NULL,NULL

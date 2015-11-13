@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SortableNinja Assignment</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    		$('#sortableNinja').sortable();
+		});
+	</script>
+</head>
+<body>
+	<div id="sortables">
+		<h3>Drag and Resort the Ninja pic</h3>
+		<ul id="sortableNinja" class="unstyled" style = "list-style-type: none">
+			<li><img src="sortingImages/sort1.png" alt = "sort1"></li>
+			<li><img src="sortingImages/sort2.png" alt = "sort2"></li>
+			<li><img src="sortingImages/sort3.png" alt = "sort3"></li>
+			<li><img src="sortingImages/sort4.png" alt = "sort4"></li>
+			<li><img src="sortingImages/sort5.png" alt = "sort5"></li>
+		</ul>
+	</div>
+</body>
+</html>

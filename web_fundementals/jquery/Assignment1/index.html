@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery Assignment 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('.add_class button').click(function(){
+    			$('.add_class p').addClass('bold');
+    			$(this).addClass('bold');
+    		});
+    		$('.after button').click(function(){
+    			$('.after p').after("<a href='http://www.amazon.com'>shop?</a>");
+    		});
+    		$('.append button').click(function(){
+    			$('.append p').append("the song that doesn't end, it just goes on and on my friend, some people started singing it not knowing how it ends, and they'll continue singing it forever just because...<br>This is ");
+    		});
+    		$('.attribute img').click(function(){
+    			$('.attribute p').after(function(){
+    				return $('.attribute img').attr('alt');
+    			});
+    		});
+    		$('.before button').click(function(){
+    			$('.before button').before("<p>Bet you didn't expect this</p>");
+    		});
+    		$(".html button").click(function(){
+ 				var htmlString = $( "div.html" ).html();
+  				$( ".html p").text( htmlString );
+			});
+			$('.val button').click(function(){
+				var result = $('input:checked').val();  
+				alert("That sounds good, but a " + result + " isn't as good as a Cheesesteak!");
+			});	
+			$( ".toggle button" ).click(function() {
+  				$( ".toggle img" ).toggle();
+			});
+			$(".hide_show_hover button").hover(function(){
+				$("#rainbow").hide(100);
+				$("#pinkie").show(100);
+			}, function(){
+				$("#pinkie").hide(100);
+				$("#rainbow").show(100);
+			});
+			$(".fade div").hover(function(){
+				$(".fade div img").fadeOut(500);
+			}, function(){
+				$(".fade div img").fadeIn(500);
+			});
+			$("#slideUp").click(function(){
+				$(this).next().slideUp();
+			});
+			$("#slideDown").click(function(){
+				$(this).next().slideDown();
+			});
+			$("#slideToggle").click(function(){
+				$(this).next().slideToggle();
+			});
+			$( ".focus form label input" ).focus(function(){
+  				$( this ).next( "span" ).css( "display", "inline" ).fadeOut( 1000 );
+			});
+
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		
+	</div>
+	<div class="add_class">
+		<h2>Add Class</h2>
+		<button>Add Class</button>
+		<p>This button will add the class bold to this button and paragraph</p>
+		<hr>
+	</div>
+	<div class="after">
+		<h2>After</h2>
+		<button>After</button>
+		<p>This button will add a secret link</p>
+		<hr>
+	</div>
+	<div class="append">
+		<h2>Append</h2>
+		<button>Append</button>
+		<p>This is...</p>
+		<hr>
+	</div>
+	<div class="attribute">
+		<h2>Attribute</h2>
+		<img src="https://lh4.googleusercontent.com/-MoJHeOqT5Pg/AAAAAAAAAAI/AAAAAAAAAAA/zPM5xXcb-Yg/s0-c-k-no-ns/photo.jpg" alt="Next_President">
+		<p>Click the photo to see the alt attribute of this photo!</p>
+		<hr>
+	</div>
+	<div class="before">
+		<h2>Before</h2>
+		<button>Before</button>
+		<p>Click the Button to See a hidden message!</p>
+		<hr>
+	</div>
+	<div class="html">
+		<h2>.html &amp; .text</h2>
+		<button>html</button>
+		<p>Click the Button to See the html for this section!</p>
+		<hr>
+	</div>
+	
+	<div class="val">
+		<h2>val</h2>
+		<div id='survey'>
+			Question:  What is your preferred meal?
+			<input type='radio' name='topping' value='taco' checked>taco
+			<input type='radio' name='topping' value='burger'>burger
+			<input type='radio' name='topping' value='pizza'>pizza
+			<br><br>
+			<button>Tell Me!</button>
+		</div>
+		<hr>
+	</div>
+	<div class="toggle">
+		<h2>Toggle</h2>
+		<button>Toggle Image!</button>
+		<p>Click the Button to flip the image!</p>
+		<img src="images/Pinkie.png" alt ="Pinkie Pie">
+		<img style = "display: none" src="images/Rainbow.png" alt = "Rainbow Dash">
+		<hr>
+	</div>
+	<div class="hide_show_hover">
+		<h2>Hide &amp; Show with Hover!</h2>
+		<button>No Need to Click!</button>
+		<p>You don't even have to click the button</p>
+		<img id = "rainbow" src="images/Rainbow.png" alt = "Rainbow Dash" >
+		<img id = "pinkie" src="images/Pinkie.png" alt = "Pinkie Pie" style = "display: none">
+		<hr>
+	</div>
+	<div class="fade">
+		<h2>Fade</h2>
+		<p>My Wife Doesn't like being pointed at!</p>
+		<div style = "width: 50%; height: 400px;">
+			<img style = "width: 100%" src="images/face.jpg" alt = "amanda face">
+		</div>
+		<hr>
+	</div>
+	<div class="slide">
+		<h2>Slide Up, Down and Toggle</h2>
+		<button id = "slideUp">Slide Up</button>
+		<p >Watch me Go!</p>
+		<br>
+		<button id = "slideDown">Slide Down</button>
+		<p  style = "display: none;">Here I come!</p>
+		<br>
+		<button id = "slideToggle">Come and Go</button>
+		<p >I can come and go!</p>
+		<hr>
+	</div>
+	<div class="focus">
+		<h2>Focus</h2>
+		<p>Type the hidden name</p>
+		<form>
+			<label>First Name:
+				<input type = "text" name = "first"><span style = "display: none;">Keyser</span>
+			</label>
+			<br>
+			<label>Last Name:
+				<input type = "text" name = "last"><span style = "display: none;">Soze</span>
+			</label>
+		</form>
+		<hr>
+	</div>
+</body>
+</html>
