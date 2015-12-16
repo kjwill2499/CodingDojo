@@ -1,0 +1,49 @@
+p{
+	display: inline-block;
+	white-space: pre-wrap;
+}
+.input-group-addon{
+	width: 30%;
+	background-color: #5bc0de;
+	border-color:#46b8da;
+	color:white;
+}
+.input-group{
+	border-color:#46b8da;
+	width: 100%;
+}
+legend{
+	font-size: 1.2em;
+}
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+.success {
+  color: black;
+}
+
+.fail {
+  color: red;
+}
+.alert-info{
+	padding: 5px;
+}
+textarea.panel{
+	margin: 0;
+	overflow: scroll;
+	width:100%;
+	height: auto;
+}
+.comment{
+	font-size: 0.9em;
+}
+.commentHead{
+	display: inline-block;
+}
+a{
+	color: #5bc0de;
+}
+
+

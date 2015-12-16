@@ -72,7 +72,7 @@
 	}
 ?>
 	<form class = 'message' action = 'process.php' method = 'post'>
-		<textarea  name='message' placeholder ='write message here...'></textarea>
+		<textarea  name='message' id='message' placeholder ='write message here...'></textarea>
 		<input type='hidden' name='action' value='message'>
 		<input type='submit' value='post message'>
 	</form>
