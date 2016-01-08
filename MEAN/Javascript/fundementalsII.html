@@ -1,0 +1,27 @@
+<script>
+var person = {};
+person = {
+	name: 'Kenrick',
+	distance_travelled: 0,
+	say_name: function(){
+		alert("My name is " + name);
+	},
+	say_something: function(message){
+		alert("" + name + "says /'"+ message +"/'");
+	},
+	walk: function(){
+		this.distance_travelled += 3;
+		alert("" + name + " is walking");
+	},
+	run: function(){
+		this.distance_travelled += 10;
+		alert("" + name + " is running");
+	},
+	crawl: function(){
+		this.distance_travelled += 1;
+		alert("" + name + " is crawling");
+	},
+};
+person.walk();
+console.log(person.distance_travelled);
+</script>

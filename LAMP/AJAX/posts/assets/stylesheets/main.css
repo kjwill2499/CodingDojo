@@ -1,0 +1,22 @@
+
+textarea{
+	margin: 0;
+	overflow: scroll;
+	width:25%;
+	height: auto;
+}
+.post{
+	height: 8vw;
+	border: solid 2px black;
+	margin: 5px;
+	overflow: scroll;
+}
+.commentHead{
+	display: inline-block;
+}
+a{
+	color: #5bc0de;
+}
+
+
+

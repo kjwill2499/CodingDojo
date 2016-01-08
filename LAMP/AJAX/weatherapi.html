@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Time</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var url = "";
+        $('form').submit(function() {
+          var location = $('input#location').val();
+          // location = $.trim(location);
+          url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=imperial&appid=d1711d8521767c67f59dbcb5e5f6cec9";
+          $.get(url, function(res){
+            console.log(res);
+            var html_str = "";
+            html_str += "<h2 class='text-center'>" + res.name + "</h2>";
+            html_str += "<h4 class='text-center'>Temperature: " + res.main.temp + "F</h4>";
+            $('div.response').html(html_str);
+          }, 'json');
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <form>
+          <input id='location' type = 'text' name='location' placeholder='enter a city name...'>
+          <input type='submit'>
+        </form>
+      </div>
+      <div class='response'>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
